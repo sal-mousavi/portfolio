@@ -1,0 +1,29 @@
+$default-transition: 0.2s ease all;
+$slow-transition: 0.4s all ease-in-out;
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(25%);
+  }
+  100% {
+    transform: translateX(75%);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    // rotate: (0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg);
+    // rotate: (180deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    // rotate: (360deg);
+  }
+}
