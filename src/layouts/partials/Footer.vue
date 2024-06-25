@@ -16,7 +16,9 @@
         </div>
       </section>
 
-      <div class="footer__copyright">Copyright © 2024 by SAL Mousavi. All rights reserved.</div>
+      <div class="footer__copyright">
+        Copyright © {{ new Date().getFullYear() }} by SAL Mousavi. All rights reserved.
+      </div>
     </footer>
   </div>
 </template>

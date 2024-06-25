@@ -16,14 +16,21 @@ $slow-transition: 0.4s all ease-in-out;
 @keyframes rotate {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
-    // rotate: (0deg);
   }
   50% {
     transform: translate(-50%, -50%) rotate(180deg);
-    // rotate: (180deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
-    // rotate: (360deg);
+  }
+}
+
+@keyframes loading-cycle {
+  0% {
+    animation-timing-function: cubic-bezier(0.3333, 0.3333, 0.6667, 0.6667);
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

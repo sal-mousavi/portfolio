@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
 .header {
-  background-color: $gray-300;
+  background-color: $gray-400;
   border-radius: 50px;
   position: fixed;
   top: 2.4rem;
@@ -21,6 +21,7 @@
   transform: translateX(-50%);
   padding: 0.2rem;
   z-index: 1000;
+  box-shadow: 0 0 6px 1px $gray-300;
 
   &__nav {
     display: flex;
@@ -29,7 +30,7 @@
   &__nav-link {
     font-size: 1.6rem;
     color: inherit;
-    padding: 0.8rem 1.6rem;
+    padding: 1rem 1.6rem 0.8rem;
     text-decoration: none;
     transition: $slow-transition;
     border-radius: 50px;

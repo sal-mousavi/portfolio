@@ -130,18 +130,22 @@
           </template>
 
           <template v-slot:project-btn-container>
-            <VButton class="btn btn--primary btn--grow">
-              <VIcon name="icon-figma" />
-              Figma Design
-            </VButton>
-            <VButton class="btn btn--primary btn--grow">
+            <VButton
+              class="btn btn--primary btn--grow"
+              href="https://github.com/sal-mousavi/bagilink"
+              target="_blank"
+            >
               <VIcon name="icon-code" />
-              Source Code</VButton
+              Source Code
+            </VButton>
+            <VButton
+              class="btn btn--primary btn--grow"
+              href="https://sal-mousavi.github.io/bagilink/#/"
+              target="_blank"
             >
-            <VButton class="btn btn--primary btn--grow">
               <VIcon name="icon-browser" />
-              Visit Website</VButton
-            >
+              Visit Website
+            </VButton>
           </template>
         </VProjectCard>
 
@@ -159,7 +163,11 @@
           </template>
 
           <template v-slot:project-btn-container>
-            <VButton class="btn btn--primary btn--grow">
+            <VButton
+              class="btn btn--primary btn--grow"
+              href="https://www.figma.com/design/Qqe5KDlioFqsucltU2jx0k/Podcast?node-id=66-2&t=dOB7GPBotgG0EIGt-1"
+              target="_blank"
+            >
               <VIcon name="icon-figma" />
               Figma Design
             </VButton>

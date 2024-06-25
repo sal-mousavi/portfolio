@@ -5,6 +5,7 @@
   font-display: auto;
   unicode-range: U+000-5FF;
   src:
-    // local('Comic Relief'),
+    local('Comic Relief'),
+    url('/fonts/Comic-Relief.woff2') format('woff2'),
     url('/fonts/Comic-Relief.ttf') format('ttf');
 }

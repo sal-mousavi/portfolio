@@ -1,8 +1,19 @@
 <template>
-  <RouterView />
+  <RouterView v-slot="{ Component }">
+    <Suspense timeout="0">
+      <template #default>
+        <component :is="Component" :key="$route.path"></component>
+      </template>
+      <template #fallback>
+        <VLoading />
+      </template>
+    </Suspense>
+  </RouterView>
 </template>
 
-<script setup></script>
+<script setup>
+import VLoading from '@/components/Loading.vue'
+</script>
 
 <style lang="scss">
 html {
@@ -19,5 +30,6 @@ body {
 
 ::selection {
   background-color: $indigo-400;
+  color: $gray-400;
 }
 </style>
